@@ -60,18 +60,7 @@ body {
 }
 
 a {
-  /* font-family: 'Anton', sans-serif; */
-  font-family: 'Noto Sans JP', sans-serif;
-  font-size: clamp(15px, 2.3em, 40px);
-  transition: all 0.3s ease;
   text-decoration: none;
-  color: var(--text-primary);
-  margin: auto;
-}
-
-a:hover {
-  color: var(--text-highlighted);
-  cursor: pointer;
 }
 
 button {
@@ -81,7 +70,7 @@ button {
   color: var(--text-primary);
   font-family: 'Rock Salt';
   font-size: 1.2rem;
-  padding: 1em 2.5em;
+  padding: .5em 2em;
   margin: 15px;
   word-spacing: 10px;
 }
@@ -91,11 +80,37 @@ button:hover {
   border: none;
   color: var(--text-primary);
   cursor: pointer;
-  padding: 1em 2.5em;
 }
 
 button:active {
   transform: scale(.95);
+}
+
+/* IDS */
+/* #next-section-button {
+  position: fixed;
+  right: 5px;
+  bottom: 80px;
+  z-index: 10;
+
+  background-color: var(--text-highlighted);
+  color: white;
+  cursor: pointer;
+  font-size: 17px;
+  font-family: 'Rock Salt';
+  text-align: center;transition: all 0.2s ease;
+  padding: 10px;
+  margin: 0;
+} */
+
+#next-section-button:hover {
+  background-color: white;
+  border: solid 1px var(--text-highlighted);
+  color: var(--text-highlighted);
+}
+
+#next-section-button:active {
+  transform: scale(.9);
 }
 
 /* Navbar.jsx styles */
@@ -173,8 +188,8 @@ button:active {
 
   letter-spacing: 3px;
   margin-top: 50vh;
-  padding-top: 10em;
-  padding-bottom: 10em;
+  padding-top: 3em;
+  padding-bottom: 3em;
   padding-left: 40px;
 }
 
@@ -218,10 +233,10 @@ button:active {
 .gallery-wrapper {
   background-color: coral;
   min-height: 50vh;
-  padding-top: 10em;
+  padding-top: 3em;
   padding-right: 40px;
   padding-left: 40px;
-  padding-bottom: 5em;
+  padding-bottom: 3em;
   letter-spacing: 3px;
 }
 
@@ -252,7 +267,7 @@ button:active {
 /* Contact */
 .contact-wrapper {
   background-color: rgb(2, 237, 221);
-  padding-top: 10em;
+  padding-top: 3em;
   padding-bottom: 10em;
   padding-left: 40px;
   padding-right: 40px;
