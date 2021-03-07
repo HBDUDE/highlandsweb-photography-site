@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import React, { useEffect } from 'react'
 
 import './App.css';
 import Navbar from './components/Navbar.jsx'
@@ -10,12 +10,18 @@ import Footer from './components/Footer.jsx'
 import camera2 from './images/johnny_automatic_digital_camera.png'
 
 function App() {
-  // const [scrollSection, setScrollSection] = useState("#top")
+  const scrollFunction = () => {
+    document.querySelector("#next-section-button").style.opacity = 0
+  }
+
+  useEffect(() => {
+    window.onscroll = () => scrollFunction()
+  }, [])
 
   return (
     <div className="App">
       <img src={camera2} alt="vintage camera clip art" className="image cam2"/>
-      {/* <div id="next-section-button"><a>Next Section</a></div> */}
+      <div id="next-section-button">Scroll down for more content!</div>
       <Navbar/>
       <About/>
       <Gallery/>

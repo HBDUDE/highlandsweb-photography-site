@@ -60,6 +60,7 @@ body {
 }
 
 a {
+  color: inherit;
   text-decoration: none;
 }
 
@@ -87,26 +88,21 @@ button:active {
 }
 
 /* IDS */
-/* #next-section-button {
-  position: fixed;
-  right: 5px;
-  bottom: 80px;
+#next-section-button {
+  position: absolute;
+  top: 80%;
+  left:20px;
   z-index: 10;
-
-  background-color: var(--text-highlighted);
-  color: white;
-  cursor: pointer;
-  font-size: 17px;
+  font-size: clamp(23px, 1.9vw, 30px);
   font-family: 'Rock Salt';
-  text-align: center;transition: all 0.2s ease;
-  padding: 10px;
-  margin: 0;
-} */
+  transition: all 0.2s ease;
+  width: 50%;
+}
 
 #next-section-button:hover {
-  background-color: white;
-  border: solid 1px var(--text-highlighted);
-  color: var(--text-highlighted);
+  /* background-color: white; */
+  /* border: solid 1px var(--text-highlighted); */
+  /* color: var(--text-highlighted); */
 }
 
 #next-section-button:active {

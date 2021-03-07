@@ -2,11 +2,11 @@ import React from 'react'
 
 function Footer() {
   return (
-    <div>
-      <div className="footer-top">
+    <div id="footer-component">
+      {/* <div className="footer-top fixed-info">
         Scroll for more info
-      </div>
-      <div className="footer">
+      </div> */}
+      <div className="footer fixed-info">
         &copy; Highland's Web Design | 2021
       </div>
     </div>
