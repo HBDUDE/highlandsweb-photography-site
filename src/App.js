@@ -1,25 +1,23 @@
-import logo from './logo.svg';
 import './App.css';
+import Navbar from './components/Navbar.jsx'
+import About from './components/About.jsx'
+import Gallery from './components/Gallery.jsx'
+import Contact from './components/Contact.jsx'
+import Footer from './components/Footer.jsx'
+
+import camera2 from './images/johnny_automatic_digital_camera.png'
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <img src={camera2} alt="vintage camera clip art" className="image cam2"/>
+      <Navbar/>
+      <About/>
+      <Gallery/>
+      <Contact/>
+      <Footer/>
     </div>
-  );
+  )
 }
 
 export default App;
